@@ -9,7 +9,7 @@ public class Hacker extends Hero {
 
     @Override
     public void applySuperPower(Boss boss, Hero[] heroes) {
-        for (int i = 0; i < heroes.length; i++) {
+        for (int i = 0; i  < heroes.length; i++) {
             boss.setHealth(boss.getHealth() - this.takeHealthBoss);
             heroes[i].setHealth(heroes[i].getHealth() + this.takeHealthBoss);
         }
